@@ -1,0 +1,96 @@
+
+
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <title>About Awesome Github collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="About Awesome Github collection">
+  <link rel="icon" type="image/png" href="/public/Awesome64.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/css/bulma/tabulator_bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/css/select2.min.css" />
+  <style>
+    .menu-label{ font-weight: bold;}
+  </style>
+</head>
+<body>
+
+<nav class="navbar has-shadow">
+  <div class="container">
+      <div class="navbar-brand">
+          <a class="navbar-item" style="padding: 0px" href="/">
+              <img src="/public/Awesome.png"
+                style="max-height: 90px;"
+               alt="Awesome Collections">
+          </a>
+
+      </div>
+      <div class="navbar-end">
+      <p class="control navbar-item">
+        <span class="select">
+        <select id="sel-search"
+          class="form-control"
+          placeholder="Search"
+          >
+          <option value=""></option>
+        </select>
+        </span>
+        </p>
+          <div class="navbar-item is-hoverable">
+              <a href="/index.html">
+              Home
+              </a>
+          </div>
+          <div class="navbar-item is-hoverable">
+              <a href="/about.html">
+              About
+              </a>
+          </div>
+      </div>
+  </div>
+</nav>
+<h2 class="title">About Awesome Github collection</h2>
+
+<section>
+
+
+<div class="column">
+<p>With some huge Github README files, it becomes hard to get a overview of the repositories quickly. This website provides quick overview of information like start, recent pushed date etc.</p>
+
+</div>
+
+<div class="column">
+<p>Information on this site is updated every week.</p>
+
+</div>
+<div class="column">
+  <p>To request for a new awesome README to be added to this site, please open an issue in github repo with the repo link</p>
+</div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function() {
+  $.getJSON('/indexLinks.json')
+    .then(function(data) {
+      $('#sel-search').select2({
+        width: '200px',
+        placeholder: "Search",
+        data: data.results})
+    })
+    .catch(err => console.log(err));
+
+  $('#sel-search').on('change', function(e){
+    let lnk = e.target.value
+    console.log(lnk)
+    window.location = lnk
+  });
+});
+</script>
+</body>
+</html>
