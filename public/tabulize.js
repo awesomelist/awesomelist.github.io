@@ -1,9 +1,12 @@
 
 
+if(document.getElementById('awesome-table')) {
+
+
 let groupopen = document.querySelectorAll('tr').length < 20;
 
 let table = new Tabulator("#awesome-table", {
-  height: (window.screen.availHeight - 100) + 'px',
+  // height: (window.screen.availHeight - 100) + 'px',
   groupBy: "Category",
   groupToggleElement: "header",
   groupStartOpen: groupopen,
@@ -79,4 +82,24 @@ document.getElementById("filter-clear").addEventListener("click", function(){
   valueEl.value = "";
 
   table.clearFilter();
+});
+
+} //end if for awesome-table search
+
+
+$(document).ready(function() {
+  $.getJSON('/indexLinks.json')
+    .then(function(data) {
+      $('#sel-search').select2({
+        width: '200px',
+        placeholder: "Search",
+        data: data.results})
+    })
+    .catch(err => console.log(err));
+
+  $('#sel-search').on('change', function(e){
+    let lnk = e.target.value
+    console.log(lnk)
+    window.location = lnk
+  });
 });
