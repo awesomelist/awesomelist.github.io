@@ -6,7 +6,7 @@ if(document.getElementById('awesome-table')) {
 let groupopen = document.querySelectorAll('tr').length < 20;
 
 let table = new Tabulator("#awesome-table", {
-  // height: (window.screen.availHeight - 100) + 'px',
+  height: (window.screen.availHeight - 100) + 'px',
   groupBy: "Category",
   groupToggleElement: "header",
   groupStartOpen: groupopen,
@@ -16,8 +16,8 @@ let table = new Tabulator("#awesome-table", {
 
   columns:[
       {title: "Name", field: "Name", responsive: 0, formatter: "html", width: 200},
-      {title: "Description", field: "Description", minWidth: 900,variableHeight:true,headerFilter:true, responsive: 2},
-      {title: "Stars", field: "Stars"},
+      {title: "Description", field: "Description", formatter: "html", minWidth: 900,variableHeight:true,headerFilter:true, responsive: 2},
+      {title: "Stars",  field: "Stars"},
       {title: "Forks", field: "Forks"},
       {title: "️Open", field: "️Open"},
       {title: "️Closed", field: "️Closed"},
@@ -50,6 +50,7 @@ function customFilter(data){
     return data.car && data.rating < 3;
 }
 
+let numFields = ['Stars', 'Forks', 'Open', 'Closed', 'Size'];
 //Trigger setFilter function with correct parameters
 function updateFilter(){
   var filterVal = fieldEl.options[fieldEl.selectedIndex].value;
@@ -66,7 +67,10 @@ function updateFilter(){
   }
 
   if(filterVal){
-    table.setFilter(filter,typeVal, valueEl.value);
+    let val = valueEl.value
+    if(numFields.indexOf(filter) !== -1) val = Number(val)
+
+    table.setFilter(filter,typeVal, val);
   }
 }
 
