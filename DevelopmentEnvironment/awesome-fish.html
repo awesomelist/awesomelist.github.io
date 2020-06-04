@@ -151,31 +151,12 @@ Port of [sindresorhus/pure](https://github.com/sindresorhus/pure) prompt.</td><t
 No bells or whistles, minimal shell prompt.</td><td>2019-01-20</td><td>2019-02-15</td><td>37</td><td>7</td><td>0</td><td>0</td><td>5</td><td>Shell</td><td>false</td><td>The Unlicense</td><td>Shell prompts</td></tr><tr><td><a href="https://github.com/isacikgoz/sashimi" target="_blank">sashimi</a></td><td>minimalist fish prompt made with raw fish</td><td>2018-09-07</td><td>2019-04-21</td><td>30</td><td>1</td><td>0</td><td>0</td><td>377</td><td>Shell</td><td>false</td><td>MIT License</td><td>Shell prompts</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

@@ -144,31 +144,12 @@ Apache module for automatic PageSpeed optimization</td><td>2015-04-06</td><td>20
 removes unused CSS from pages, allowing you to reduce the global CSS you may need to load in for your site. Tasks are available for [Grunt](https://github.com/addyosmani/grunt-uncss), [Gulp](https://github.com/ben-eb/gulp-uncss) and [other](https://addyosmani.com/blog/removing-unused-css/) build tools.</td><td>2013-04-18</td><td>2020-05-22</td><td>8848</td><td>398</td><td>28</td><td>252</td><td>1145</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Supplementary tools</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

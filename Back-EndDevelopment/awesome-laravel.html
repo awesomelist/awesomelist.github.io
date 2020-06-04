@@ -171,8 +171,7 @@ Create website screenshots through an API</td><td>2014-07-13</td><td>2020-04-30<
 </td><td>2016-01-02</td><td>2020-01-10</td><td>498</td><td>106</td><td>13</td><td>149</td><td>6332</td><td>CSS</td><td>true</td><td>MIT License</td><td>Content Management Systems</td></tr><tr><td><a href="https://github.com/Web-Feet/coastercms" target="_blank">coastercms</a></td><td>The repository for Coaster CMS (coastercms.org), a full featured, Laravel based Content Management System
 </td><td>2016-02-05</td><td>2020-01-09</td><td>368</td><td>100</td><td>20</td><td>62</td><td>14685</td><td>PHP</td><td>false</td><td>GNU General Public License v3.0</td><td>Content Management Systems</td></tr><tr><td><a href="https://github.com/Laralum/Laralum" target="_blank">Laralum</a></td><td>The modular open source laravel administration panel
 </td><td>2016-10-03</td><td>2018-10-21</td><td>306</td><td>54</td><td>2</td><td>17</td><td>3615</td><td>PHP</td><td>false</td><td>MIT License</td><td>Content Management Systems</td></tr><tr><td><a href="https://github.com/borgert-inc/borgert-cms" target="_blank">borgert-cms</a></td><td>Borgert is a CMS Open Source created with Laravel Framework 5.6
-</td><td>2016-06-01</td><td>2019-12-08</td><td>297</td><td>112</td><td>0</td><td>52</td><td>2099</td><td>PHP</td><td>false</td><td>Other</td><td>Content Management Systems</td></tr><tr><td><a href="https://github.com/jenssegers/laravel-mongodb" target="_blank">laravel-mongodb</a></td><td>A MongoDB based Eloquent model and Query builder for Laravel (Moloquent)
-Eloquent model and query builder with support for MongoDB</td><td>2013-03-31</td><td>2020-06-03</td><td>4881</td><td>1152</td><td>109</td><td>1447</td><td>1820</td><td>PHP</td><td>false</td><td>MIT License</td><td>Databases, ORMs, Migrations &amp; Seeding</td></tr><tr><td><a href="https://github.com/spatie/laravel-backup" target="_blank">laravel-backup</a></td><td>A package to backup your Laravel app
+</td><td>2016-06-01</td><td>2019-12-08</td><td>297</td><td>112</td><td>0</td><td>52</td><td>2099</td><td>PHP</td><td>false</td><td>Other</td><td>Content Management Systems</td></tr><tr><td><a href="https://github.com/spatie/laravel-backup" target="_blank">laravel-backup</a></td><td>A package to backup your Laravel app
 Backup your app</td><td>2015-02-17</td><td>2020-05-30</td><td>3985</td><td>526</td><td>2</td><td>653</td><td>1458</td><td>PHP</td><td>false</td><td>MIT License</td><td>Databases, ORMs, Migrations &amp; Seeding</td></tr><tr><td><a href="https://github.com/andersao/l5-repository" target="_blank">l5-repository</a></td><td>Laravel 5 - Repositories to abstract the database layer</td><td>2015-02-12</td><td>2020-05-23</td><td>3536</td><td>753</td><td>195</td><td>245</td><td>486</td><td>PHP</td><td>false</td><td>MIT License</td><td>Databases, ORMs, Migrations &amp; Seeding</td></tr><tr><td><a href="https://github.com/Xethron/migrations-generator" target="_blank">migrations-generator</a></td><td>Laravel Migrations Generator: Automatically generate your migrations from an existing database schema.
 Generate migrations from an existing database</td><td>2014-03-17</td><td>2020-02-19</td><td>3088</td><td>546</td><td>65</td><td>76</td><td>102</td><td>PHP</td><td>false</td><td>MIT License</td><td>Databases, ORMs, Migrations &amp; Seeding</td></tr><tr><td><a href="https://github.com/lazychaser/laravel-nestedset" target="_blank">laravel-nestedset</a></td><td>Effective tree structures in Laravel 4-5
 Nested Sets pattern implementation</td><td>2013-09-28</td><td>2020-03-04</td><td>2425</td><td>313</td><td>115</td><td>264</td><td>373</td><td>PHP</td><td>false</td><td></td><td>Databases, ORMs, Migrations &amp; Seeding</td></tr><tr><td><a href="https://github.com/orangehill/iseed" target="_blank">iseed</a></td><td>Laravel Inverse Seed Generator
@@ -299,31 +298,12 @@ Helper for Google&#39;s new noCAPTCHA (reCAPTCHA)</td><td>2015-01-17</td><td>202
 Add sorting/ordering capabilities to any Eloquent model</td><td>2013-10-09</td><td>2020-04-03</td><td>135</td><td>17</td><td>4</td><td>10</td><td>243</td><td>PHP</td><td>false</td><td>Other</td><td>Utilities</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

@@ -158,31 +158,12 @@ An alternative way to define React components using React&#39;s &#34;hooks&#34; 
 Purely functional frontend framework powered by FRP.</td><td>2018-03-22</td><td>2019-12-15</td><td>70</td><td>5</td><td>1</td><td>3</td><td>391</td><td>PureScript</td><td>false</td><td>MIT License</td><td>UI Libraries</td></tr><tr><td><a href="https://github.com/i-am-tom/purescript-panda" target="_blank">purescript-panda</a></td><td>What would TEA look like if we had no VDOM?</td><td>2018-01-18</td><td>2019-01-21</td><td>65</td><td>8</td><td>1</td><td>2</td><td>413</td><td>PureScript</td><td>false</td><td></td><td>UI Libraries</td></tr><tr><td><a href="https://github.com/OutWatch/purescript-outwatch" target="_blank">purescript-outwatch</a></td><td>A functional and reactive UI framework based on Rx and VirtualDom</td><td>2017-03-05</td><td>2019-09-16</td><td>31</td><td>6</td><td>4</td><td>6</td><td>109</td><td>PureScript</td><td>false</td><td>Apache License 2.0</td><td>UI Libraries</td></tr><tr><td><a href="https://github.com/purescript-contrib/purescript-routing" target="_blank">purescript-routing</a></td><td>A clean, type-safe routing library for PureScript.</td><td>2015-03-09</td><td>2020-05-29</td><td>82</td><td>32</td><td>7</td><td>17</td><td>145</td><td>PureScript</td><td>false</td><td>Apache License 2.0</td><td>URL Routers</td></tr><tr><td><a href="https://github.com/purescript-hyper/purescript-trout" target="_blank">purescript-trout</a></td><td> Type-Level Routing for PureScript</td><td>2017-03-05</td><td>2020-01-12</td><td>37</td><td>11</td><td>1</td><td>4</td><td>167</td><td>PureScript</td><td>false</td><td>Mozilla Public License 2.0</td><td>URL Routers</td></tr><tr><td><a href="https://github.com/coot/purescript-cofree-react-router" target="_blank">purescript-cofree-react-router</a></td><td>React-Router implemented in PureScript as Cofree Comonad for the Array functor.</td><td>2017-03-07</td><td>2018-03-11</td><td>20</td><td>2</td><td>3</td><td>2</td><td>358</td><td>PureScript</td><td>false</td><td>MIT License</td><td>URL Routers</td></tr><tr><td><a href="https://github.com/paluh/purescript-boomboom" target="_blank">purescript-boomboom</a></td><td>Never hard code your urls again. Boomboom them all!</td><td>2018-03-21</td><td>2019-06-19</td><td>5</td><td>2</td><td>1</td><td>1</td><td>92</td><td>PureScript</td><td>false</td><td>BSD 3-Clause &#34;New&#34; or &#34;Revised&#34; License</td><td>URL Routers</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

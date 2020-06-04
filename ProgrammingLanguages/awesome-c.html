@@ -130,8 +130,7 @@
   <tr><td><a href="https://github.com/AtomLinter/linter-gcc" target="_blank">linter-gcc</a></td><td>Atom-linter extension to lint C/C&#43;&#43; source files using gcc/g&#43;&#43;
 Lint C code in Atom, using GCC. [`MIT`](https://raw.githubusercontent.com/atom/atom/master/LICENSE.md)</td><td>2015-08-03</td><td>2020-03-15</td><td>68</td><td>24</td><td>85</td><td>110</td><td>201</td><td>JavaScript</td><td>false</td><td>Other</td><td>Atom ###</td></tr><tr><td><a href="https://github.com/AtomLinter/linter-clang" target="_blank">linter-clang</a></td><td>Lint C-based files using Clang.
 Lint C code in Atom, using Clang. [`MIT`](https://raw.githubusercontent.com/atom/atom/master/LICENSE.md)</td><td>2014-06-19</td><td>2020-05-16</td><td>60</td><td>32</td><td>20</td><td>124</td><td>313</td><td>JavaScript</td><td>false</td><td></td><td>Atom ###</td></tr><tr><td><a href="https://github.com/premake/premake-core" target="_blank">premake-core</a></td><td>Premake
-Build script generator for toolsets like Visual Studio, Xcode, or GNU Make. [`3-clause BSD`](https://directory.fsf.org/wiki/License:BSD-3-Clause)</td><td>2015-03-21</td><td>2020-06-02</td><td>1629</td><td>377</td><td>162</td><td>472</td><td>26371</td><td>C</td><td>false</td><td>BSD 3-Clause &#34;New&#34; or &#34;Revised&#34; License</td><td>Build Systems ##</td></tr><tr><td><a href="https://github.com/google/snappy" target="_blank">snappy</a></td><td>A fast compressor/decompressor
-Fast compression library (implementation in C&#43;&#43;, native bindings to C).</td><td>2014-03-03</td><td>2020-06-01</td><td>4131</td><td>717</td><td>0</td><td>0</td><td>2624</td><td>C&#43;&#43;</td><td>false</td><td>Other</td><td>Compression ##</td></tr><tr><td><a href="https://github.com/vasi/pixz" target="_blank">pixz</a></td><td>Parallel, indexed xz compressor
+Build script generator for toolsets like Visual Studio, Xcode, or GNU Make. [`3-clause BSD`](https://directory.fsf.org/wiki/License:BSD-3-Clause)</td><td>2015-03-21</td><td>2020-06-02</td><td>1629</td><td>377</td><td>162</td><td>472</td><td>26371</td><td>C</td><td>false</td><td>BSD 3-Clause &#34;New&#34; or &#34;Revised&#34; License</td><td>Build Systems ##</td></tr><tr><td><a href="https://github.com/vasi/pixz" target="_blank">pixz</a></td><td>Parallel, indexed xz compressor
 Pixz (pronounced pixie) is a parallel, indexing version of `xz`. [`2-clause BSD`](https://directory.fsf.org/wiki/License:BSD-2-Clause)</td><td>2010-01-13</td><td>2020-04-25</td><td>454</td><td>37</td><td>28</td><td>37</td><td>1356</td><td>C</td><td>false</td><td>BSD 2-Clause &#34;Simplified&#34; License</td><td>Compression ##</td></tr><tr><td><a href="https://github.com/LMDB/lmdb" target="_blank">lmdb</a></td><td>Read-only mirror of official repo on openldap.org. Issues and pull requests here are ignored. Use OpenLDAP ITS for issues.
 Ultra-fast, ultra-compact key-value embedded data store. [`OpenLDAP License`](https://directory.fsf.org/wiki/License:OLDAP-2.7)</td><td>2015-04-22</td><td>2020-04-24</td><td>1483</td><td>396</td><td>0</td><td>0</td><td>2046</td><td>C</td><td>false</td><td></td><td>Database ##</td></tr><tr><td><a href="https://github.com/flycheck/flycheck" target="_blank">flycheck</a></td><td>On the fly syntax checking for GNU Emacs
 Modern syntax checking. For C, it can use either GCC or Clang as a back-end. [`GNU GPL3 or later`](http://www.gnu.org/licenses/gpl-3.0.html)</td><td>2012-10-10</td><td>2020-05-31</td><td>1946</td><td>352</td><td>69</td><td>967</td><td>21363</td><td>Emacs Lisp</td><td>false</td><td>GNU General Public License v3.0</td><td>Emacs ###</td></tr><tr><td><a href="https://github.com/id-Software/Quake" target="_blank">Quake</a></td><td>Quake GPL Source Release
@@ -186,31 +185,12 @@ C library for working with APEv2 tags. [`Expat`](https://directory.fsf.org/wiki/
 Syntax checking and linting. [`Do What The Fuck You Want To license`](https://github.com/vim-syntastic/syntastic/blob/master/LICENCE)</td><td>2009-07-11</td><td>2020-05-02</td><td>10404</td><td>1118</td><td>33</td><td>1439</td><td>4374</td><td>Vim script</td><td>false</td><td>Do What The F*ck You Want To Public License</td><td>Vim ###</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

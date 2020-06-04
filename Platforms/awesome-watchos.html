@@ -139,31 +139,12 @@ An apple watch app to display notes on your wrist.</td><td>2014-11-25</td><td>20
 An apple watch app to access the SBB timetable.</td><td>2015-01-01</td><td>2015-10-04</td><td>41</td><td>9</td><td>6</td><td>8</td><td>16796</td><td>Objective-C</td><td>false</td><td>Apache License 2.0</td><td>Sample Apps</td></tr><tr><td><a href="https://github.com/facebookarchive/IGInterfaceDataTable" target="_blank">IGInterfaceDataTable</a></td><td>A category on WKInterfaceTable that makes configuring tables with multi-dimensional data easier.</td><td>2015-02-23</td><td>2018-01-03</td><td>840</td><td>59</td><td>0</td><td>0</td><td>662</td><td>Objective-C</td><td>false</td><td>Other</td><td>UI</td></tr><tr><td><a href="https://github.com/mikeswanson/JBWatchActivityIndicator" target="_blank">JBWatchActivityIndicator</a></td><td>An easy way to generate activity indicator images for Apple Watch</td><td>2015-05-03</td><td>2016-05-17</td><td>523</td><td>36</td><td>0</td><td>0</td><td>398</td><td>Objective-C</td><td>false</td><td></td><td>UI</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

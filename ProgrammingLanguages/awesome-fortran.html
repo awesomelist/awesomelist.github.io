@@ -141,31 +141,12 @@ Pure Fortran (2003&#43;) library for ensuring codes portability.</td><td>2012-04
 An MVC web stack written in Fortran 90</td><td>2016-06-07</td><td>2020-01-31</td><td>654</td><td>29</td><td>0</td><td>5</td><td>1398</td><td>Fortran</td><td>false</td><td>BSD 3-Clause &#34;New&#34; or &#34;Revised&#34; License</td><td>Web</td></tr><tr><td><a href="https://github.com/andreww/fox" target="_blank">fox</a></td><td>A Fortran XML library</td><td>2008-08-08</td><td>2020-06-01</td><td>45</td><td>46</td><td>25</td><td>18</td><td>10306</td><td>Fortran</td><td>false</td><td>Other</td><td>XML Manipulation</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

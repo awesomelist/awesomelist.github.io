@@ -142,31 +142,12 @@ Collection of miscellaneous open source scripts and helpers for Unity 5.0.</td><
 In-game debug console that displays output from `Debug.Log`.</td><td>2014-03-28</td><td>2020-04-19</td><td>375</td><td>44</td><td>3</td><td>11</td><td>191</td><td>C#</td><td>false</td><td>MIT License</td><td>Utilities</td></tr><tr><td><a href="https://github.com/mminer/scene-view-bookmarks" target="_blank">scene-view-bookmarks</a></td><td>Unity editor extension to bookmark scene views.</td><td>2018-01-24</td><td>2018-05-21</td><td>32</td><td>3</td><td>1</td><td>0</td><td>8</td><td>C#</td><td>false</td><td>MIT License</td><td>Utilities</td></tr><tr><td><a href="https://github.com/vimeo/vimeo-unity-sdk" target="_blank">vimeo-unity-sdk</a></td><td>Easily stream your Vimeo videos into Unity or record and publish out to Vimeo.</td><td>2017-07-10</td><td>2019-05-03</td><td>125</td><td>26</td><td>28</td><td>52</td><td>113572</td><td>C#</td><td>false</td><td>MIT License</td><td>Video</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

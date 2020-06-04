@@ -144,8 +144,7 @@ A Go based CAN simulator for the Raspberry Pi to be used with PiCAN2 or the open
 No matter which shield is selected you will need your own sniffer. This is implementation of standard Lawicel/SLCAN protocol for Arduino &#43; any MCP CAN Shield to use with many standard CAN bus analysis software packages or SocketCAN</td><td>2015-04-15</td><td>2018-11-19</td><td>135</td><td>50</td><td>3</td><td>5</td><td>53</td><td>C&#43;&#43;</td><td>false</td><td>MIT License</td><td>Hardware</td></tr><tr><td><a href="https://github.com/watterott/CANdiy-Shield" target="_blank">CANdiy-Shield</a></td><td>CAN-Bus Shield for Arduino based on Microchip MCP2515 or MCP2517FD CAN Controller
 </td><td>2013-02-21</td><td>2019-11-21</td><td>19</td><td>14</td><td>0</td><td>0</td><td>1952</td><td></td><td>false</td><td></td><td>Hardware</td></tr><tr><td><a href="https://github.com/sebi2k1/node-can" target="_blank">node-can</a></td><td>NodeJS SocketCAN extension
 Allows you to communicate over CAN networks with simple JavaScript functions.</td><td>2012-12-31</td><td>2020-04-19</td><td>144</td><td>53</td><td>5</td><td>56</td><td>284</td><td>JavaScript</td><td>false</td><td></td><td>JavaScript</td></tr><tr><td><a href="https://github.com/ps1337/automotive-security-research" target="_blank">automotive-security-research</a></td><td>This repository contains reverse engineering results and resources for a few specific car models of a very specific car manufacturer. Please don&#39;t sue.
-</td><td>2018-05-16</td><td>2019-05-26</td><td>21</td><td>12</td><td>0</td><td>0</td><td>58982</td><td>Python</td><td>false</td><td></td><td>Miscellaneous</td></tr><tr><td><a href="https://github.com/jnv/lists" target="_blank">lists</a></td><td>The definitive list of lists (of lists) curated on GitHub and elsewhere
-</td><td>2013-11-14</td><td>2020-06-03</td><td>6558</td><td>565</td><td>0</td><td>8</td><td>10352</td><td></td><td>false</td><td>Creative Commons Zero v1.0 Universal</td><td>Other Awesome Lists</td></tr><tr><td><a href="https://github.com/rshipp/awesome-malware-analysis" target="_blank">awesome-malware-analysis</a></td><td>Defund the Police.
+</td><td>2018-05-16</td><td>2019-05-26</td><td>21</td><td>12</td><td>0</td><td>0</td><td>58982</td><td>Python</td><td>false</td><td></td><td>Miscellaneous</td></tr><tr><td><a href="https://github.com/rshipp/awesome-malware-analysis" target="_blank">awesome-malware-analysis</a></td><td>Defund the Police.
 </td><td>2015-05-09</td><td>2020-06-03</td><td>6160</td><td>1746</td><td>1</td><td>29</td><td>624</td><td></td><td>false</td><td>Other</td><td>Other Awesome Lists</td></tr><tr><td><a href="https://github.com/carpedm20/awesome-hacking" target="_blank">awesome-hacking</a></td><td>A curated list of awesome Hacking tutorials, tools and resources
 </td><td>2014-12-16</td><td>2020-05-23</td><td>6065</td><td>1067</td><td>5</td><td>4</td><td>251</td><td></td><td>false</td><td>MIT License</td><td>Other Awesome Lists</td></tr><tr><td><a href="https://github.com/ashishb/android-security-awesome" target="_blank">android-security-awesome</a></td><td>A collection of android security related resources
 </td><td>2014-07-22</td><td>2020-05-28</td><td>4628</td><td>1125</td><td>0</td><td>11</td><td>245</td><td>Shell</td><td>false</td><td>Apache License 2.0</td><td>Other Awesome Lists</td></tr><tr><td><a href="https://github.com/apsdehal/awesome-ctf" target="_blank">awesome-ctf</a></td><td>A curated list of CTF frameworks, libraries, resources and softwares
@@ -159,31 +158,12 @@ Intended to be the *nmap of vehicle security*.</td><td>2015-03-31</td><td>2020-0
 A fingerprinting tool for CAN communications that can be used to find a specific signal on a CAN network when testing interactions with a vehicle.</td><td>2015-01-09</td><td>2015-09-29</td><td>60</td><td>13</td><td>0</td><td>0</td><td>222</td><td>Ruby</td><td>false</td><td>GNU General Public License v2.0</td><td>Python</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

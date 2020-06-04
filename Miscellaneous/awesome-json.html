@@ -203,31 +203,12 @@ Extract, rename and transform JSON based on a template. (node.js)</td><td>2014-0
 allow transformation using a JSON-based transformation language. (node.js)</td><td>2014-10-24</td><td>2015-03-30</td><td>6</td><td>0</td><td>0</td><td>0</td><td>340</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Transformations</td></tr><tr><td><a href="https://github.com/globocom/json-sharp" target="_blank">json-sharp</a></td><td>Javascript tool to process operations on pure JSON objects</td><td>2015-10-02</td><td>2017-06-28</td><td>4</td><td>3</td><td>0</td><td>0</td><td>20</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Transformations</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

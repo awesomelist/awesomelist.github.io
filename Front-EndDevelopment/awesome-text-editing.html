@@ -135,31 +135,12 @@ From the [Guardian](http://www.theguardian.com/) team</td><td>2013-11-11</td><td
 Open Source HTML editor</td><td>2012-04-06</td><td>2020-01-31</td><td>1629</td><td>572</td><td>133</td><td>143</td><td>16633</td><td>JavaScript</td><td>false</td><td>GNU Lesser General Public License v2.1</td><td>Rich-text editors using contenteditable</td></tr><tr><td><a href="https://github.com/jwysiwyg/jwysiwyg" target="_blank">jwysiwyg</a></td><td>WYSIWYG jQuery Plugin</td><td>2010-03-22</td><td>2018-03-02</td><td>1075</td><td>326</td><td>116</td><td>172</td><td>1974</td><td>JavaScript</td><td>false</td><td>Other</td><td>Rich-text editors using contenteditable</td></tr><tr><td><a href="https://github.com/ritzyed/ritzy" target="_blank">ritzy</a></td><td>Collaborative web-based rich text editor</td><td>2015-06-12</td><td>2017-10-10</td><td>873</td><td>61</td><td>15</td><td>15</td><td>1005</td><td>JavaScript</td><td>false</td><td>Apache License 2.0</td><td>Rich-text editors using contenteditable</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

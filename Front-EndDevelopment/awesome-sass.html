@@ -148,31 +148,12 @@ Extract variables from scss files. Use scss to describe styles for use in javasc
 P/Invoke .NET wrapper around libsass to convert SCSS to CSS supporting NET2.0/NET3.5/NET4.x&#43; and CoreCLR platform.</td><td>2016-04-05</td><td>2020-05-02</td><td>34</td><td>8</td><td>6</td><td>8</td><td>12407</td><td>C#</td><td>false</td><td>BSD 2-Clause &#34;Simplified&#34; License</td><td>Tools</td></tr><tr><td><a href="https://github.com/zellwk/typi" target="_blank">typi</a></td><td>A sass mixin to make responsive typography easy</td><td>2015-12-06</td><td>2018-06-20</td><td>855</td><td>43</td><td>4</td><td>43</td><td>257</td><td>CSS</td><td>false</td><td>MIT License</td><td>Typography</td></tr><tr><td><a href="https://github.com/hiulit/Sassy-Gridlover" target="_blank">Sassy-Gridlover</a></td><td>Super easy to use Sass mixins to establish a typographic system with modular scale and vertical rhythm. Based on the Gridlover app.</td><td>2014-09-02</td><td>2019-04-01</td><td>223</td><td>12</td><td>2</td><td>15</td><td>734</td><td>HTML</td><td>false</td><td>MIT License</td><td>Typography</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

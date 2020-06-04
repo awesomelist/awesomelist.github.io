@@ -160,31 +160,12 @@ Log in to npm.</td><td>2016-02-16</td><td>2020-05-23</td><td>55</td><td>34</td><
 Get data from an npm registry.</td><td>2013-03-24</td><td>2016-03-29</td><td>51</td><td>15</td><td>7</td><td>4</td><td>22</td><td>JavaScript</td><td>false</td><td>Other</td><td>Registry</td></tr><tr><td><a href="https://github.com/sindresorhus/npm-user" target="_blank">npm-user</a></td><td>Get user info of an npm user</td><td>2015-05-16</td><td>2019-07-04</td><td>48</td><td>11</td><td>0</td><td>2</td><td>27</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Registry</td></tr><tr><td><a href="https://github.com/sindresorhus/npm-keyword" target="_blank">npm-keyword</a></td><td>Get a list of npm packages with a certain keyword</td><td>2015-01-18</td><td>2019-05-21</td><td>37</td><td>6</td><td>0</td><td>5</td><td>31</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Registry</td></tr><tr><td><a href="https://github.com/sindresorhus/latest-version-cli" target="_blank">latest-version-cli</a></td><td>Get the latest version of an npm package</td><td>2015-10-09</td><td>2020-01-16</td><td>34</td><td>7</td><td>1</td><td>0</td><td>4</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Registry</td></tr><tr><td><a href="https://github.com/gillstrom/dpn" target="_blank">dpn</a></td><td>Get the dependents of a users npm modules</td><td>2015-11-09</td><td>2017-09-23</td><td>25</td><td>1</td><td>0</td><td>0</td><td>11</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Registry</td></tr><tr><td><a href="https://github.com/sindresorhus/npm-email" target="_blank">npm-email</a></td><td>Get the email of an npm user</td><td>2015-05-07</td><td>2020-04-06</td><td>12</td><td>3</td><td>0</td><td>0</td><td>15</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Registry</td></tr><tr><td><a href="https://github.com/kevva/npm-user-packages-cli" target="_blank">npm-user-packages-cli</a></td><td>Get packages by a npm user</td><td>2016-01-09</td><td>2017-07-06</td><td>1</td><td>0</td><td>0</td><td>0</td><td>6</td><td>JavaScript</td><td>false</td><td>MIT License</td><td>Registry</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

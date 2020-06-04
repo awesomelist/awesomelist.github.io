@@ -157,8 +157,7 @@
 </td><td>2014-11-04</td><td>2020-06-03</td><td>2611</td><td>617</td><td>34</td><td>3412</td><td>50434</td><td>Go</td><td>false</td><td>Apache License 2.0</td><td>Hypervisors</td></tr><tr><td><a href="https://github.com/tailhook/lithos" target="_blank">lithos</a></td><td>Process supervisor that supports linux containers
 </td><td>2015-01-20</td><td>2019-03-13</td><td>90</td><td>5</td><td>1</td><td>12</td><td>783</td><td>Rust</td><td>false</td><td>MIT License</td><td>Hypervisors</td></tr><tr><td><a href="https://github.com/marty90/multidocker" target="_blank">multidocker</a></td><td>Creates a system where users are forced to login in dedicated independent docker containers.
 </td><td>2017-06-24</td><td>2018-11-27</td><td>21</td><td>5</td><td>0</td><td>0</td><td>18</td><td>Dockerfile</td><td>false</td><td>Apache License 2.0</td><td>Hypervisors</td></tr><tr><td><a href="https://github.com/vmware/photon" target="_blank">photon</a></td><td>Minimal Linux container host
-</td><td>2015-04-15</td><td>2020-06-03</td><td>2034</td><td>573</td><td>84</td><td>518</td><td>116970</td><td>Python</td><td>false</td><td>Other</td><td>Operating Systems</td></tr><tr><td><a href="https://github.com/moby/moby" target="_blank">moby</a></td><td>Moby Project - a collaborative project for the container ecosystem to assemble container-based systems
-</td><td>2013-01-18</td><td>2020-06-03</td><td>57237</td><td>16547</td><td>3599</td><td>16629</td><td>153655</td><td>Go</td><td>false</td><td>Apache License 2.0</td><td>Partial Access</td></tr><tr><td><a href="https://github.com/zalando/python-nsenter" target="_blank">python-nsenter</a></td><td>Enter kernel namespaces from Python
+</td><td>2015-04-15</td><td>2020-06-03</td><td>2034</td><td>573</td><td>84</td><td>518</td><td>116970</td><td>Python</td><td>false</td><td>Other</td><td>Operating Systems</td></tr><tr><td><a href="https://github.com/zalando/python-nsenter" target="_blank">python-nsenter</a></td><td>Enter kernel namespaces from Python
 </td><td>2014-09-15</td><td>2020-03-27</td><td>118</td><td>16</td><td>4</td><td>5</td><td>30</td><td>Python</td><td>false</td><td>Other</td><td>Partial Access</td></tr><tr><td><a href="https://github.com/Friz-zy/pyspaces" target="_blank">pyspaces</a></td><td>Works with Linux namespaces througth glibc with pure python
 </td><td>2015-04-12</td><td>2018-03-05</td><td>78</td><td>11</td><td>1</td><td>4</td><td>88</td><td>Python</td><td>false</td><td>Other</td><td>Partial Access</td></tr><tr><td><a href="https://github.com/hpcng/singularity" target="_blank">singularity</a></td><td>Singularity: Application containers for Linux
 </td><td>2015-10-09</td><td>2020-06-02</td><td>1628</td><td>352</td><td>365</td><td>2351</td><td>29746</td><td>Go</td><td>false</td><td>Other</td><td>Sandboxes</td></tr><tr><td><a href="https://github.com/sylabs/singularity" target="_blank">singularity</a></td><td>Singularity: Application containers for Linux
@@ -180,31 +179,12 @@
 </td><td>2015-10-23</td><td>2016-05-13</td><td>59</td><td>10</td><td>2</td><td>3</td><td>41</td><td>Python</td><td>false</td><td>GNU General Public License v2.0</td><td>Tools</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

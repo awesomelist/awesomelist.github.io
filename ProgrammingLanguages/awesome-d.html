@@ -127,9 +127,9 @@
   </thead>
   <tbody>
 
-  <tr><td><a href="https://github.com/huntlabs/hunt" target="_blank">hunt</a></td><td>A refined core library for D programming language. The module has concurrency / collections / event / io / logging / text / serialization and more.</td><td>2017-03-09</td><td>2020-05-27</td><td>70</td><td>10</td><td>9</td><td>54</td><td>8121</td><td>D</td><td>false</td><td>Apache License 2.0</td><td>Basic</td></tr><tr><td><a href="https://github.com/huntlabs/hunt-validation" target="_blank">hunt-validation</a></td><td>
-A data validation library for DLang based on hunt library.</td><td>2018-12-17</td><td>2020-05-21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>34</td><td>D</td><td>false</td><td>Apache License 2.0</td><td>Basic</td></tr><tr><td><a href="https://github.com/huntlabs/hunt-time" target="_blank">hunt-time</a></td><td>A time library for D programming language.
-A time library and similar to Joda-time and Java.time api.</td><td>2019-01-08</td><td>2020-05-21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>857</td><td>D</td><td>false</td><td>Apache License 2.0</td><td>Basic</td></tr><tr><td><a href="https://github.com/atilaneves/cerealed" target="_blank">cerealed</a></td><td>Powerful binary serialisation library for D
+  <tr><td><a href="https://github.com/huntlabs/hunt" target="_blank">hunt</a></td><td>A refined core library for D programming language. The module has concurrency / collections / event / io / logging / text / serialization and more.</td><td>2017-03-09</td><td>2020-05-27</td><td>70</td><td>10</td><td>9</td><td>54</td><td>8121</td><td>D</td><td>false</td><td>Apache License 2.0</td><td>Basic</td></tr><tr><td><a href="https://github.com/huntlabs/hunt-time" target="_blank">hunt-time</a></td><td>A time library for D programming language.
+A time library and similar to Joda-time and Java.time api.</td><td>2019-01-08</td><td>2020-05-21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>857</td><td>D</td><td>false</td><td>Apache License 2.0</td><td>Basic</td></tr><tr><td><a href="https://github.com/huntlabs/hunt-validation" target="_blank">hunt-validation</a></td><td>
+A data validation library for DLang based on hunt library.</td><td>2018-12-17</td><td>2020-05-21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>34</td><td>D</td><td>false</td><td>Apache License 2.0</td><td>Basic</td></tr><tr><td><a href="https://github.com/atilaneves/cerealed" target="_blank">cerealed</a></td><td>Powerful binary serialisation library for D
 Serialisation library for D </td><td>2013-07-23</td><td>2019-10-04</td><td>81</td><td>2</td><td>5</td><td>11</td><td>242</td><td>D</td><td>false</td><td>BSD 3-Clause &#34;New&#34; or &#34;Revised&#34; License</td><td>Binary Serilization</td></tr><tr><td><a href="https://github.com/msoucy/dproto" target="_blank">dproto</a></td><td>D Protocol Buffer mixins to create structures at compile time
 Google Protocol Buffer support in D.</td><td>2013-03-19</td><td>2020-05-02</td><td>35</td><td>21</td><td>23</td><td>59</td><td>274</td><td>D</td><td>false</td><td>Boost Software License 1.0</td><td>Binary Serilization</td></tr><tr><td><a href="https://github.com/huntlabs/flatbuffers" target="_blank">flatbuffers</a></td><td>D Programming Language implementation of the google flatbuffers library</td><td>2016-04-13</td><td>2017-07-21</td><td>12</td><td>1</td><td>1</td><td>0</td><td>29</td><td>D</td><td>false</td><td></td><td>Binary Serilization</td></tr><tr><td><a href="https://github.com/mihails-strasuns/mood" target="_blank">mood</a></td><td>PoC blog implementation in D &#43; vibe.d
 simple vibe.d based blog engine</td><td>2015-06-04</td><td>2020-04-13</td><td>42</td><td>10</td><td>0</td><td>0</td><td>615</td><td>D</td><td>false</td><td>Boost Software License 1.0</td><td>Blog Engine</td></tr><tr><td><a href="https://github.com/atilaneves/reggae" target="_blank">reggae</a></td><td>Build system in D, Python, Ruby, Javascript or Lua
@@ -201,31 +201,12 @@ General purpose serializer (currently only supports XML)</td><td>2011-08-16</td>
 Phobos candidate for a XML serialization</td><td>2016-03-08</td><td>2017-07-27</td><td>23</td><td>8</td><td>16</td><td>25</td><td>2020</td><td>D</td><td>false</td><td>Boost Software License 1.0</td><td>XML</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>

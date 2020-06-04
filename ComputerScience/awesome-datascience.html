@@ -145,37 +145,17 @@
 </td><td>2013-11-07</td><td>2020-06-02</td><td>5221</td><td>210890</td><td>93</td><td>12</td><td>590</td><td></td><td>false</td><td></td><td>Presentations</td></tr><tr><td><a href="https://github.com/JuliaLang/IJulia.jl" target="_blank">IJulia.jl</a></td><td>Julia kernel for Jupyter
 – a Julia-language backend combined with the Jupyter interactive environment</td><td>2013-03-05</td><td>2020-05-20</td><td>1982</td><td>329</td><td>66</td><td>642</td><td>1054</td><td>Julia</td><td>false</td><td>MIT License</td><td>Toolboxes - Environment</td></tr><tr><td><a href="https://github.com/allegroai/trains" target="_blank">trains</a></td><td>TRAINS - Auto-Magical Experiment Manager &amp; Version Control for AI - NOW WITH AUTO-MAGICAL DEVOPS!
 Auto-Magical Experiment Manager, Version Control &amp; DevOps for AI</td><td>2019-06-10</td><td>2020-06-03</td><td>1325</td><td>165</td><td>30</td><td>91</td><td>8175</td><td>Python</td><td>false</td><td>Apache License 2.0</td><td>Toolboxes - Environment</td></tr><tr><td><a href="https://github.com/ironmussa/Optimus" target="_blank">Optimus</a></td><td>:truck: Agile Data Science Workflows made easy with Pyspark
-Cleansing, pre-processing, feature engineering, exploratory data analysis and easy ML with PySpark backend. </td><td>2017-07-13</td><td>2020-06-03</td><td>894</td><td>183</td><td>30</td><td>149</td><td>107865</td><td>Jupyter Notebook</td><td>false</td><td>Apache License 2.0</td><td>Toolboxes - Environment</td></tr><tr><td><a href="https://github.com/awslabs/aws-data-wrangler" target="_blank">aws-data-wrangler</a></td><td>Pandas on AWS
-An open-source Python package that extends the power of Pandas library to AWS connecting DataFrames and AWS data related services (Amazon Redshift, AWS Glue, Amazon Athena, Amazon EMR, etc).</td><td>2019-02-26</td><td>2020-06-03</td><td>750</td><td>98</td><td>11</td><td>132</td><td>4111</td><td>Python</td><td>false</td><td>Apache License 2.0</td><td>Toolboxes - Environment</td></tr><tr><td><a href="https://github.com/intel/idlf" target="_blank">idlf</a></td><td>Intel® Deep Learning Framework</td><td>2015-02-12</td><td>2016-06-16</td><td>319</td><td>89</td><td>1</td><td>4</td><td>3362</td><td>C&#43;&#43;</td><td>true</td><td>Other</td><td>Toolboxes - Environment</td></tr><tr><td><a href="https://github.com/jadianes/data-science-your-way" target="_blank">data-science-your-way</a></td><td>Ways of doing Data Science Engineering and Machine Learning in R and Python
+Cleansing, pre-processing, feature engineering, exploratory data analysis and easy ML with PySpark backend. </td><td>2017-07-13</td><td>2020-06-03</td><td>894</td><td>183</td><td>30</td><td>149</td><td>107865</td><td>Jupyter Notebook</td><td>false</td><td>Apache License 2.0</td><td>Toolboxes - Environment</td></tr><tr><td><a href="https://github.com/intel/idlf" target="_blank">idlf</a></td><td>Intel® Deep Learning Framework</td><td>2015-02-12</td><td>2016-06-16</td><td>319</td><td>89</td><td>1</td><td>4</td><td>3362</td><td>C&#43;&#43;</td><td>true</td><td>Other</td><td>Toolboxes - Environment</td></tr><tr><td><a href="https://github.com/jadianes/data-science-your-way" target="_blank">data-science-your-way</a></td><td>Ways of doing Data Science Engineering and Machine Learning in R and Python
 </td><td>2015-07-08</td><td>2018-09-09</td><td>508</td><td>244</td><td>1</td><td>0</td><td>9527</td><td>Jupyter Notebook</td><td>false</td><td>Other</td><td>Tutorials</td></tr><tr><td><a href="https://github.com/kevinschaich/pyspark-cheatsheet" target="_blank">pyspark-cheatsheet</a></td><td>🐍 Quick reference guide to common patterns &amp; functions in PySpark.
 </td><td>2019-03-07</td><td>2020-03-09</td><td>67</td><td>23</td><td>0</td><td>0</td><td>20</td><td></td><td>false</td><td>MIT License</td><td>Tutorials</td></tr>
   </tbody>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
-<script src="/public/tabulize.js"></script>
 
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js" integrity="sha256-wfVTTtJ2oeqlexBsfa3MmUoB77wDNRPqT1Q1WA2MMn4=" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function() {
-  $.getJSON('/indexLinks.json')
-    .then(function(data) {
-      $('#sel-search').select2({
-        width: '200px',
-        placeholder: "Search",
-        data: data.results})
-    })
-    .catch(err => console.log(err));
-
-  $('#sel-search').on('change', function(e){
-    let lnk = e.target.value
-    console.log(lnk)
-    window.location = lnk
-  });
-});
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.6.3/js/tabulator.min.js" integrity="sha256-iPjRCZa7o9UTQu2PxYlkbw20wAdnOShjVhpOXuE4LsU=" crossorigin="anonymous"></script>
+<script src="/public/tabulize.js"></script>
 </body>
 </html>
